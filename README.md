@@ -1,0 +1,2 @@
+# libssh2-1.8.0-VC2008-MT-32-64-SRC
+libssh2-1.8.0-VC2008-MT-32/64bit
