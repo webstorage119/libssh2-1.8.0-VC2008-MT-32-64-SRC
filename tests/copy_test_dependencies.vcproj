@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="copy_test_dependencies"
+	ProjectGUID="{16E920CA-4775-3DD3-A156-9CD92127E334}"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			IntermediateDirectory="copy_test_dependencies.dir\Debug"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				AdditionalIncludeDirectories=""
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E make_directory C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E copy C:/Projects/MyProjects/openssl-1.0.2n-VC2008-MT-32-64-BIN/win32/libeay32.dll C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E make_directory C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E copy C:/Projects/MyProjects/openssl-1.0.2n-VC2008-MT-32-64-BIN/win32/ssleay32.dll C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E make_directory C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E copy C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/src/Debug/libssh2.dll C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			IntermediateDirectory="copy_test_dependencies.dir\Release"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				AdditionalIncludeDirectories=""
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E make_directory C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E copy C:/Projects/MyProjects/openssl-1.0.2n-VC2008-MT-32-64-BIN/win32/libeay32.dll C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E make_directory C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E copy C:/Projects/MyProjects/openssl-1.0.2n-VC2008-MT-32-64-BIN/win32/ssleay32.dll C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E make_directory C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -E copy C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/src/Release/libssh2.dll C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/$(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<File
+			RelativePath="C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeLists.txt"
+			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/CMakeLists.txt"
+					CommandLine="C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -HC:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE -BC:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE --check-stamp-file C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeFiles\generate.stamp&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+					AdditionalDependencies="C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeLists.txt;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\BundleUtilities.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\GetPrerequisites.cmake;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\cmake\CopyRuntimeDependencies.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\cmake\SocketLibraries.cmake;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\libssh2_config_cmake.h.in;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeLists.txt;"
+					Outputs="C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeFiles\generate.stamp"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release|Win32"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+					Description="Building Custom Rule C:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE/tests/CMakeLists.txt"
+					CommandLine="C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\cmake.exe -HC:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE -BC:/Projects/MyProjects/libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE --check-stamp-file C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeFiles\generate.stamp&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+					AdditionalDependencies="C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeLists.txt;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CheckSymbolExists.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\BundleUtilities.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\GetPrerequisites.cmake;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\cmake\CopyRuntimeDependencies.cmake;C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\cmake\SocketLibraries.cmake;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\libssh2_config_cmake.h.in;C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeLists.txt;"
+					Outputs="C:\Projects\MyProjects\libssh2-1.8.0-VC2008-MT-32-SRC-CMAKE\tests\CMakeFiles\generate.stamp"
+				/>
+			</FileConfiguration>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
